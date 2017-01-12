@@ -28,7 +28,7 @@ opt_kmeans <- function(data_file, kRange=2:30, distFun=distCor, centFun=centMean
     }
 
     # do clustering: repeat 3 times for each k (taken from the default setting)
-    res <- stepFlexclust(data, k=kRange, nrep=3, verbose=TRUE, multicore=cl, drop=TRUE,
+    res <- stepFlexclust(data, k=kRange, nrep=3, verbose=FALSE, multicore=cl, drop=TRUE,
                          FUN=function(x, k, group=NULL, simple=FALSE, save.data=FALSE)
                              kcca(x, k, family=kccaFamily(dist=distFun, cent=centFun)))
 
