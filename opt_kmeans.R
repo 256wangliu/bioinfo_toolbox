@@ -79,7 +79,6 @@ opt_kmeans <- function(data_file, kRange=2:30, distFun=distCor, centFun=centMean
 
     # output clustering results: labels and centers
     opt_k <- unique(c(rsq_opt_k, aic_opt_k, bic_opt_k))
-    print(opt_k)
     for(opt_k_i in opt_k){
         i <- which(unsorted_k == opt_k_i)
 
