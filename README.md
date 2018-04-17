@@ -55,3 +55,5 @@ bedGraphToBigWig ${OFPREFIX}.rpm.bg ${GENOME} ${OUTPUT}.rpm.bw
 * `aa-kda.py` calculates protein moledular weights in kDa from FASTA
   file(s).
 
+## LegoPlot
+* `lego-plot.py` displays somatic point mutations per three-nucleotide context
